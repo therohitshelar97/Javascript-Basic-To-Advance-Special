@@ -1,0 +1,15 @@
+Variables :- variable is nothing but the container for 
+data types means its store the data/values
+
+** how to defined the variables :- to define the variable we can use any characters
+
+a = 11
+b = 22
+a and b = idetifier
+11 and 22 = are data types
+document.write(a+b)
+
+a1 
+js variables are case-sensitive
+A 
+a

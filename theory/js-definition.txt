@@ -1,0 +1,12 @@
+1. JavaScript it is an light weight
+2. Open source = free to use
+3. it is an interpreted language = it execute code line by line
+4. It is an high level programming language = human understandable language
+5. It is an platform independent = run on any environment 
+6. object oriented programming = re-usability of code
+    class
+    object
+    inheritance
+    encapsulation
+    polymorphism
+    abstraction

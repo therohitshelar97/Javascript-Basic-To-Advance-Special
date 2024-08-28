@@ -1,0 +1,64 @@
+Operators :- operators are use to perform operations on values or varibales
+1 + 2
+
++ = it nothing but operators
+1 and 2 this are the operands
+
+different types of operators
+1. Arithmetic Operator :- it perform the mathematical operations/calculations
+   addition +
+   multification *
+   substraction -
+   division /
+   modulus %
+   exponentialtion **
+
+2. Comparison Operator :- its use to compare two or more values or variables
+   equla to ==
+   identical ===
+   not equal to !=
+   not identical !==
+   greater tah >
+   less than <
+   greater than equal to >=
+   less than equal to <= 
+
+3. Logical Operator :- Logical operators are use to compare two conditions and
+logical operator always associate with comparison operator
+ 
+    and &&
+    or  ||
+    not !
+
+truth table for and &&
+
+A      B     o/p
+0  &&  1      0
+1  &&  0      0
+0  &&  0      0
+1  &&  1      1
+
+truth  table for or ||
+
+A      B     o/pa
+0  ||  1      1
+1  ||  0      1
+0  ||  0      0
+1  ||  1      1
+
+not !
+A    o/p
+1     0
+0     1
+
+4. increment/decrement operator
+
+    pre-increment ++i
+    post-increment i++
+    pre-decrement --i
+    post-decrement i++
+
+5. Assigment Operators
+   a = 1
+   a += 1      a=a+1
+

@@ -1,0 +1,27 @@
+
+
+
+two types of data types
+1. Primitive data types
+2. non-primitive data types
+
+1. primitive data types:- the identifiers/variable which 
+can only store single value
+
+a = 12
+
+2. non-primitive data types :- we can store multiple values in to 
+the single variable with different data types like below
+
+ a = [1,2,3,4,'abc']
+
+** types of primitive data types
+1. number
+2. string
+3. undefine
+4. null
+5. boolean - true/false
+
+** types of non-primitive data types
+1. array
+2. object
