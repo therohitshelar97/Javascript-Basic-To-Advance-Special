@@ -1,0 +1,11 @@
+Function :- Function it is an block of code. 
+the code will only execute/run when we called the function
+
+There are two types of function
+1. User defined 
+   a. nornal function
+   b. function with Parameter
+   c. function with default Parameter
+   d. Arrow function
+   e. ananomouse function
+2. In-Built Function

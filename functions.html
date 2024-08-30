@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+    
+</head>
+<body>
+    <button onclick="Data()">Click Here To Run Your Code</button>
+    <button onclick="Welcome()">Goa</button>
+    <button onclick="BgRed()" id="red">Red</button>
+    <button onclick="BgGreen()" id="green">Green</button>
+    <button onclick="BgYellow()" id="yellow">Yellow</button>
+    <script>
+        function Data(){
+           document.write("<h1>Welcome To The First Function...</h2>") 
+        }
+        //calling the function
+        //Data()
+        function Welcome(){
+            document.write("Welcome To Goa Singham...")
+        }
+
+        function BgRed(){
+            document.body.style.backgroundColor = "red";
+            document.getElementById('red').style.backgroundColor = "black"
+            document.getElementById('red').style.color = "white"
+            document.getElementById('yellow').style.backgroundColor = ""
+            document.getElementById('green').style.backgroundColor = ""
+            document.getElementById('yellow').style.color = ""
+            document.getElementById('green').style.color = ""
+        }
+        function BgGreen(){
+            document.body.style.backgroundColor = "green";
+            document.getElementById('red').style.backgroundColor = ""
+            document.getElementById('green').style.backgroundColor = "black"
+            document.getElementById('green').style.color = "white"
+            document.getElementById('yellow').style.backgroundColor = ""
+            document.getElementById('red').style.color = ""
+            document.getElementById('yellow').style.color = ""
+        }
+        function BgYellow(){
+            document.body.style.backgroundColor = "yellow";
+            document.getElementById('red').style.backgroundColor = ""
+            document.getElementById('green').style.backgroundColor = ""
+            document.getElementById('red').style.backgroundColor = ""
+            document.getElementById('yellow').style.backgroundColor = "black"
+            document.getElementById('yellow').style.color = "white"
+            document.getElementById('red').style.color = ""
+            document.getElementById('green').style.color = ""
+        }
+    </script>
+</body>
+</html>
