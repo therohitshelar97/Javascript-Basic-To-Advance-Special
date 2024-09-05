@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <form action="" method="" name="fm">
+        first_name:<input type="text" name="fname" />
+        <br><br>
+        Last_Name:<input type="text" name="lname" />
+    </form>
+
+    <script>
+        function Validation(){
+            var fname = document.fm.fname.value;
+            var lname = document.fm.lname.value;
+            
+            // document.write(fname,lname)
+            if(fname=="" || fname==null){
+              document.getElementById('btn').style.float = "right";
+            }
+            else if(lname=="" || lname==null){
+              document.getElementById('btn').style.float = "right";
+            }
+        }
+
+        function Reset(){
+            document.getElementById('btn').style.float = "left";
+        }
+    </script>
+    <input type="submit" value="Submit" onmouseover="Validation()" onmouseout="Reset()" id="btn" />
+</body>
+</html>
