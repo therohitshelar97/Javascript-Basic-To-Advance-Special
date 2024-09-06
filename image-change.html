@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form name="fm" action="" method="">
+            first_name:<input type="text" name="fname" />
+            <br><br>
+            contact_number:<input text="number" name="cnum" />
+        </form>
+    </div>
+
+    <script>
+        function Validation(){
+            fname = document.fm.fname.value;
+            cnum = document.fm.cnum.value;
+            
+            if(fname=="" || fname==null){
+                alert("Bhai Pehle Name Enter Karo")
+            }
+            else if(cnum.length!=10){
+                alert("Bhai Phone Number Me 10 Aank Hote he ")
+            }
+            else{
+                alert("Form Submitted Successfully...")
+            }
+        }
+    </script>
+
+    <input type="submit" value="Submit" onclick="Validation()" />
+
+
+</body>
+</html>

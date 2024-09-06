@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>even-odd-numbers</title>
+    <style>
+        body{
+            background-color: wheat;
+        }
+        
+        .div{
+            background-color: antiquewhite;
+            padding: 50px;
+            width: 25%;
+            margin-left: 37vw;
+            margin-top: 10%;
+            box-shadow: 0 0 10px 5px rgb(148, 145, 145);
+            
+        }
+
+        .btn{
+            position: relative;
+            left: 50%;
+            bottom:150px;
+            padding: 5px 10px 5px 10px;
+            border: none;
+            background-color: green;
+            border-radius: 5px;
+        }
+        .input{
+            padding: 5px;
+            width: 300px;
+            border: 3px solid rgb(0, 191, 255);
+            border-radius: 4px;
+        }
+        .div1{
+            background-color: aqua;
+            padding: 5px 0px 5px 0px;
+            margin-top: 20px;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <form name="fm" action="" method="">
+            Number:<input type="number" name="num" class="input"/>
+            <br><br>
+            
+        </form>
+        <div class="div1">
+            <h3>Result : <span id="n">here you can see result only</span></h3>
+        </div>
+        
+   </div>
+
+    <script>
+        function Even_Odd(){
+
+
+        var num = document.fm.num.value
+        // document.write(num)
+        result = num%2
+        if(num=="" || num==null || num==NaN ){
+            document.getElementById('n').innerText = "Enter Number First";
+            document.getElementById('n').style.color = "red"
+        }
+        else if(result==0){
+            document.getElementById('n').innerText = num + " Is an even"
+            document.getElementById('n').style.color = "blue"
+        }
+        else{
+            document.getElementById('n').innerText = num + " Is an odd"
+            document.getElementById('n').style.color = "orange"
+        }
+    }
+    </script>
+    <input type="submit" value="Submit" onclick="Even_Odd()" class="btn" />
+    
+</body>
+</html>
