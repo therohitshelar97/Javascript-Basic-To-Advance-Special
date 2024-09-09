@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+       
+         /* .bd1{
+            height: 100vh;
+            width: 100vw;
+            background-size: 100%;
+            background-repeat: no-repeat;
+         } */
+        
+        .container{
+            z-index:1;
+            position: absolute;
+            top:0;
+            margin: 0;
+            padding:50px;
+            margin-left: 30%;
+        }
+        
+        .div2{
+            background-color: rgba(23, 237, 237,0.5);
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 30%; 
+        }
+        
+        .img{
+            margin: 0;
+            position: absolute;
+            z-index:-1;
+            width: 100%;
+        }
+
+        @media screen and (max-width:700px) {
+            .container{
+            z-index:1;
+            position: absolute;
+            top:0;
+            padding:10px;
+            margin-left: 0px;
+    
+        }
+            
+        }
+        
+
+
+    </style>
+</head>
+<body>
+
+
+    
+    <div class="bd1" id="">
+        <div class="container">
+            
+                <div class="div1"></div>
+                <div class="div2">
+                    <h1> <span id="greet">dshfsdfhdsfh</span>  : <span id="tm"></span></h1>
+                    
+                </div>
+                <div class="div1"></div>
+            </div>
+    </div>
+    <div class="img">
+        <img src="" height="600px" width="100%" id="bd" />
+    </div>
+
+    
+
+    <script>
+        var time = 23
+        if(time<24 && 12>=time){
+            document.getElementById('greet').innerText = "Good Morning"
+            document.getElementById('tm').innerText = time
+            document.getElementById('bd').src = "images/morning.jpg"
+        }
+        else if(12<time && 16>=time){
+            document.getElementById('greet').innerText = "Good Afternoon"
+            document.getElementById('tm').innerText = time
+            document.getElementById('bd').src = "images/afternoon.jpg"
+            document.getElementById('bd').style.backgroundSize = 100 + "%"
+            
+        }
+        else if(16<time && 20>=time){
+            document.getElementById('greet').innerText = "Good Evening"
+            document.getElementById('tm').innerText = time
+            document.getElementById('bd').src = "images/evening.jpg"
+        }
+        else if(20<time && 24>=time){
+            document.getElementById('greet').innerText = "Good Night"
+            document.getElementById('tm').innerText = time
+            document.getElementById('bd').src = "images/night.jpg"
+        }
+    </script>
+</body>
+</html>
