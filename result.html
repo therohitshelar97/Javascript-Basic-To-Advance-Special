@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <form action="" method="" name="fm">
+        seat-number:<input type="number" name="seat"  />
+        <br><br>
+        Mother-Name:<input type="text" name="mname" />
+        <br><br>
+        
+    </form>
+
+    <table>
+        <tr>
+            <td>Math</td>
+            <td>Physics</td>
+            <td>Chemistry</td>
+            <td>Biology</td>
+            <td>Geology</td>
+            <td>English</td>
+            <td>Percentage</td>
+        </tr>
+        <tr>
+            <td id="m1"></td>
+            <td id="m2"></td>
+            <td id="m3"></td>
+            <td id="m4"></td>
+            <td id="m5"></td>
+            <td id="m6"></td>
+            <td id="per"></td>
+        </tr>
+    </table>
+
+    <script>
+        function Result(){
+            seat = document.fm.seat.value;
+            mname = document.fm.mname.value;
+            if (seat==120 && mname == 'abc'){
+               document.getElementById('m1').innerHTML = 60
+               document.getElementById('m2').innerHTML = 65
+               document.getElementById('m3').innerHTML = 68
+               document.getElementById('m4').innerHTML = 55
+               document.getElementById('m5').innerHTML = 60
+               document.getElementById('m6').innerHTML = 57
+
+               percentage = (60+65+68+55+60+57)/6
+
+               document.getElementById("per").innerHTML = percentage
+            }
+
+            else  if(seat==121 && mname =='abcd'){
+                document.getElementById('m1').innerHTML = 62
+               document.getElementById('m2').innerHTML = 61
+               document.getElementById('m3').innerHTML = 68
+               document.getElementById('m4').innerHTML = 50
+               document.getElementById('m5').innerHTML = 62
+               document.getElementById('m6').innerHTML = 55
+
+               percentage = (62+61+68+50+62+55)/6
+
+               document.getElementById("per").innerHTML = percentage
+            }
+
+
+        }
+    </script>
+<input type="submit" value="Result" onclick="Result()" />
+
+</body>
+</html>

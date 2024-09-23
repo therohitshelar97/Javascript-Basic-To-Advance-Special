@@ -1,0 +1,17 @@
+control statement/loops :- are use to peform the repatative task
+
+1. while loop
+2. for loop
+3. do while
+## below loops we will learn after array and object
+4. for each
+5. for in
+6. for of
+
+** While Loop :- We use while loop when we don't know the iterations
+
+*** Syntax for while loop
+
+step1 :- initialization or start
+step2 :- condition or end
+step3 :- increment/decrement  or step
