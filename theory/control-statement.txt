@@ -15,3 +15,11 @@ control statement/loops :- are use to peform the repatative task
 step1 :- initialization or start
 step2 :- condition or end
 step3 :- increment/decrement  or step
+
+** for loop :- We use for loop when we know the 
+
+*** Syntax of for loop as below
+
+for(initizationa;condtion/end;step/increment/decrement){
+    scope
+}
