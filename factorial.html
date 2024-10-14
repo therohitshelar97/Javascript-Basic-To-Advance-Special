@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+    <script>
+        /*
+          factorial of 4
+
+          i   fact       fact=fact*i         i++
+          1   1          fact = 1*1 = 1      2
+          2   1          fact =  1*2 = 2     3
+          3   2          fact = 2*3 = 6      4
+          4   6          fact = 6*4 = 24     5
+          5   24         fact = 24*5 = 120    
+        */
+        
+        num = 4
+        fact=1
+        for(i=1;i<=num;i++){
+            fact = fact*i
+        }
+        document.write("factorial of "+num+ " Is " + fact)
+
+        /*
+          Asignment 
+
+          1. write same above code with while loop
+          2. write a code to show 1 to 10 all factorial using for loop
+          expected output is :-
+          factorial of 1 is 1
+          factorial of 2 is 2
+          factorial of 3 is 6
+          so on....
+
+
+        */
+
+    </script>
+</body>
+</html>

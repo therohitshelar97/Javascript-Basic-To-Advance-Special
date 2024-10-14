@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong Number</title>
+</head>
+<body>
+    <script>
+        /*
+        Armstrong number
+
+        */
+
+        n=370
+        n1=n
+        arm = 0
+        while(n!=0){
+            r = n%10
+            arm = arm+r**3
+            n = Math.floor(n/10)
+        }
+
+        if(arm==n1){
+            document.write(n1 + " Is an Armstrong Number")
+        }
+        else{
+            document.write(n1 + " Is not an Armstrong Number")
+        }
+
+        /*
+
+        Assignemnt 
+        Write Same Code With For Loop
+
+        */
+    </script>
+</body>
+</html>
