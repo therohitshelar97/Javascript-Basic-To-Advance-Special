@@ -1,0 +1,9 @@
+Array :- It it a multicollection data types, the single variable can store mutiple 
+values with differen t data types
+
+- each value we can access by index values
+- the value of arrays we can change
+- we can add values into the arrays 
+- we can delete values from the array also
+- to define array we use [] 
+- each element of array is seperated by commas

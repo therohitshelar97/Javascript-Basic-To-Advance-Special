@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // the first way to create array
+        a = Array(1,2,3,4,'abc','xyz')
+        document.write(typeof(a)+"<br>")
+        document.write(a+"<br>")
+
+        // second way to create an array
+
+        b = [1,2,3,'abc','xyz',true]
+        document.write(b + "<br>")
+        document.write(b[3] + "<br>")
+        document.write(b[2] + "<br>")
+
+        // replacing the values of array using index
+        b[3] = "Rohit"
+
+        document.write(b + "<br>")
+
+        // two or multi dimensional array
+
+        c = [1,2,3,['abc','yxz',123]]
+        document.write(c[3][0])
+    </script>
+</body>
+</html>
