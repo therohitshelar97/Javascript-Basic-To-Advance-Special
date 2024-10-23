@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aray Duplicate values</title>
+</head>
+<body>
+    <script>
+        a = [1,2,3,1,10,12,10]
+        count = 0
+        for(i=0;i<a.length;i++){
+            for(j=i+1;j<a.length;j++){
+                  if(a[i]==a[j]){
+                    count = count+1
+                    
+                  }
+                
+            }
+        }
+        
+        document.write("Number Of Duplicate Values In this Array are ", count + "<br>")
+
+        /*
+        from above code also print the duplicate values 
+
+        Q = [10,2,3,1,,6,7,8,9,0,3]
+
+        display all odd number from above array Q and also write the number of odd numbers
+
+        Q1 = [1,2,3,[[['xyz',['srk',['the king']]]]]]
+        from above array Q1 display/print only SRK
+        */
+    </script>
+</body>
+</html>

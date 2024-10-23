@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array Order</title>
+</head>
+<body>
+    <script>
+        a = [12,2,3,0,1,5,4,40,10]
+        // o/p = [0,1,2,3,4,510,12,40]
+        //sort in ascending order
+
+        for(i=0;i<a.length;i++){
+            for(j=0;j<a.length;j++){
+                if(a[i]<=a[j]){
+                    temp = a[i]
+                    a[i] = a[j]
+                    a[j] = temp
+                }
+            }
+        }
+
+        document.write("Ascendeing order "+a +"<br>")
+
+        for(i=0;i<a.length;i++){
+            for(j=0;j<a.length;j++){
+                if(a[i]>=a[j]){
+                    temp = a[i]
+                    a[i] = a[j]
+                    a[j] = temp
+                }
+            }
+        }
+
+        document.write("descendeing order "+a +"<br>")
+    </script>
+</body>
+</html>
