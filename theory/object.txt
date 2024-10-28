@@ -1,0 +1,7 @@
+Object :- Object is an multicollection data types object can store multiple values in to the single variable 
+but its store the values in the form of key and values pair
+
+- to create an object we use {}
+- we can print the value from object using keys
+- duplicate value we can use but key can not
+- we can change the values of object also

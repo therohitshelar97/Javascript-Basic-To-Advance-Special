@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    <script>
+        a = [1,2,3,'xyz','abc',33,11,22,66]
+        // length : length method will return the length of the element
+        document.write(a.length +"<br>")
+        // at
+        document.write(a.at(3) + "<br>")
+        // array to string 
+        document.write(a.toString() + "<br>")
+        // pop
+        // a.pop()
+        // document.write(a + "<br>")
+
+        // push 
+        a.push("Rohit")
+        document.write(a + "<br>")
+
+        // shift
+        // a.shift()
+        // document.write(a + "<br>")
+
+        //unshift
+         a.unshift("AAAA")
+         document.write( a + "<br>")
+
+         // splice
+
+         a.splice(2,0,'Fruits')
+
+         a.splice(6,1)
+         document.write(a + "<br>")
+
+         // slicing
+         b = [11,33,44,22,10,9,'abc','xyz','bbb','zzz']
+
+         document.write(b.slice(3,6) + "<br>")
+         document.write(b.slice(6))
+
+        
+
+
+    </script>
+</body>
+</html>
