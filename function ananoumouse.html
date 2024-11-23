@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana</title>
+</head>
+<body>
+    <script>
+        // ananoumouse function it is an samll function that we can use in another function
+        var Ana = function(){
+              return "I am an Ananoumouse Function"
+        }
+        document.write(Ana() + "<br>")
+
+
+        obj = {name:'Abc',age:23, Ana:function(){
+            return `I am Ananoumouse function from object and i am accessing name from it ${this.name} and age is ${this.age}`
+        }}
+
+        document.write(obj.Ana())
+
+    </script>
+</body>
+</html>

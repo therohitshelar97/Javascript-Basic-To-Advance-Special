@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function With Parameter</title>
+</head>
+<body>
+    <script>
+        function Abc(name,age,city,class1){
+            return `my name is ${name} my age is ${age} and my city is ${city} an i am studying in ${class1}`
+        }
+ 
+        document.write(Abc('Rohit',12,'Mumbai','7th standard') + "<br>")
+
+        document.write(Abc('Ankit',25,'Mumbai','Third Year') + "<br>")
+
+
+        // function with default argurments
+
+        function Default(name,age,class1="First Year"){
+            return `my name is ${name} my age is ${age} and i am studying in ${class1}`
+        }
+        document.write(Default('Rohit',19) + "<br>")
+     
+        //we can overide default argument
+
+        function Default(name,age,class1="First Year"){
+            return `my name is ${name} my age is ${age} and i am studying in ${class1}`
+        }
+        document.write(Default('Rohit',19,'Second Year'))
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Arrow function without Curly brace
+        var arr = ()=>document.write("welcome To The Arrow Function <br>")
+        arr()
+
+        //Single Line Arrrow function with curly brace
+        var arr1 = ()=>{
+            document.write("Arrow function With Curly bracket...<br>")
+        }
+        arr1()
+
+        // In Arrow function Return is default available
+
+        var arr2 = ()=>"My name is Rohit"
+        document.write(arr2() + "<br>")
+
+        var arr3 = ()=>{
+            return "My name is shelar"
+        }
+        document.write(arr3() + "<br>")
+
+        //we can also pass parametrs to the arrow function
+         var para = (name,age,city)=>`My name is ${name} my age is ${age} and i live in ${city}`
+
+        document.write(para('Rohit',26,'Mumbai')
+        )     
+        </script>
+</body>
+</html>

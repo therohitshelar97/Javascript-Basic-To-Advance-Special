@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object1</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Student_Name</th>
+            <th>Student_Age</th>
+            <th>Class</th>
+        </tr>
+        <tr>
+            <td id="n1"></td>
+            <td id="a1"></td>
+            <td id="c1"></td>
+        <tr>
+            <td id="n2"></td>
+            <td id="a2"></td>
+            <td id="c2"></td>
+        </tr>
+            <td id="n3"></td>
+            <td id="a3"></td>
+            <td id="c3"></td>
+        <tr>
+            <td id="n4"></td>
+            <td id="a4"></td>
+            <td id="c4"></td>
+        </tr>
+            
+      
+       
+    </table>
+    <script>
+        //we can create array inside the object as well
+        var obj = {students_name:['rahul','raj','abc','xyx'],students_age:[23,22,24,22], class:["TY","SY","SY","TY"]}
+
+        // display the name and age of rahul
+
+        // document.write(obj['students_name'][0] + ' = ' + obj['students_age'][0] + "<br>")
+        // document.write(obj['students_name'][1] + ' = ' + obj['students_age'][1] + "<br>")
+        // document.write(obj['students_name'][2] + ' = ' + obj['students_age'][2] + "<br>")
+        // document.write(obj['students_name'][3] + ' = ' + obj['students_age'][3] + "<br>")
+
+        // for(i in obj){
+        //     for(j of obj[i]){
+        //         document.write(j + "<br>")
+        //     }
+        // }
+
+        document.getElementById('n1').innerText = obj['students_name'][0]
+        document.getElementById('n2').innerText = obj['students_name'][1]
+        document.getElementById('n3').innerText = obj['students_name'][2]
+        document.getElementById('n4').innerText = obj['students_name'][3]
+
+        document.getElementById('a1').innerText = obj['students_age'][0]
+        document.getElementById('a2').innerText = obj['students_age'][1]
+        document.getElementById('a3').innerText = obj['students_age'][2]
+        document.getElementById('a4').innerText = obj['students_age'][3]
+
+        document.getElementById('c1').innerText = obj['class'][0]
+        document.getElementById('c2').innerText = obj['class'][1]
+        document.getElementById('c3').innerText = obj['class'][2]
+        document.getElementById('c4').innerText = obj['class'][3]
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //callback function : callback function it is an part of Asynchrouse js 
+        // callback function means we pass one function as an argument to the another function
+
+        function Hi(name){
+            document.write(`Hi ${name} Hello How Are You... <br>`)
+        }
+
+        function Bye(name){
+           document.write(`Bye Bye ${name}`)
+        }
+
+
+        function Main(data){
+              data('Ankit')
+        }
+
+        Main(Hi)
+        Main(Bye)
+
+    </script>
+</body>
+</html>

@@ -8,4 +8,5 @@ There are two types of function
    c. function with default Parameter
    d. Arrow function
    e. ananomouse function
+   f. callback function
 2. In-Built Function
