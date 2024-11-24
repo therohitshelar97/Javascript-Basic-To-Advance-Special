@@ -1,0 +1,10 @@
+DOM :- Is nothing but document object module, its use to communicate with HTML and CSS
+
+We Have Some Methods In DOM as below
+
+1. document.getElementElementByID()
+2. document.getElementsByClassName()
+3. document.getElementByTagName()
+4. document.querySelector
+5. document.eventListner
+6. document.getElementByName()
