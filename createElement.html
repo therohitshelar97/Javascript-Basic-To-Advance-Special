@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Element</title>
+</head>
+<body id="body">
+    <script>
+        var img = document.createElement('img')
+        img.setAttribute('src','images/amazon.png')
+
+        var h1 = document.createElement('h1')
+        //styling to the h1
+
+        h1.style.backgroundColor = "yellow"
+        h1.style.color = "red"
+
+        // h1.setAttribute('style','color:red')
+        var text = document.createTextNode('This my first h1 created by JS DOM..')
+        h1.append(text)
+
+
+        
+        var body = document.getElementById('body')
+        body.appendChild(img)
+        body.append(h1)
+
+        console.log(img)
+        console.log(h1)
+
+
+        //Assignment create table and list using same and also create video and audeo tags
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+</head>
+<body>
+
+    <h1 id="id"></h1>
+
+    <h2 class="cls"></h2>
+    <h2 class="cls"></h2>
+    <h2 class="cls"></h2>
+    <h2 class="cls"></h2>
+
+    <script>
+        // Query Selector
+
+        document.querySelector("#id").innerHTML = "Hello From query Selector with Id";
+
+      var a =  document.querySelector(".cls")
+      console.log("querySelector only ",a)
+
+      // Query selector only selectr the one element with any selector
+
+      var b = document.querySelectorAll(".cls")
+      console.log("querySelectorAll ", b)
+
+      b[0].innerHTML = "First H2 Tag"
+      b[0].style.color = "red"
+      b[0].style.backgroundColor = "yellow";
+
+      b[1].innerHTML = "second H2 Tag"
+      b[1].style.color = "red"
+      b[1].style.backgroundColor = "yellow";
+    </script>
+
+</body>
+</html>

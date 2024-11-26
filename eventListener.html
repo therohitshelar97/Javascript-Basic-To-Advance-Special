@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listner</title>
+</head>
+<body>
+    <button id="demo">Run</button>
+    <button id="demo1">Run Query</button>
+
+
+    <script>
+        // document.getElementById('demo').addEventListener('click',Run)
+
+        var data = document.getElementById("demo");
+        data.addEventListener('click',Run)
+
+        function Run(){
+            alert("Working......")
+        }
+
+        // event Listner With querySelector
+
+        var data1 = document.querySelector("#demo1")
+        data1.addEventListener('click',Query)
+
+        function Query(){
+            alert("Now Query Selector Is Working...")
+        }
+
+    </script>
+</body>
+</html>
