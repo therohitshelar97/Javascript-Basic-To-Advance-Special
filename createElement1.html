@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Element</title>
+</head>
+<body id="bd">
+    <script>
+        var btn = document.createElement('button')
+        var text = document.createTextNode('Called Me')
+        btn.appendChild(text)
+        body = document.getElementById('bd')
+        body.appendChild(btn)
+        btn.setAttribute('id','btn1')
+        console.log(btn)
+
+        var h1 = document.createElement('h1')
+        h1.setAttribute('id','id')
+
+        body.appendChild(h1)
+
+        document.getElementById('btn1').addEventListener('click',CallMe)
+        function CallMe(){
+            document.getElementById('id').innerText = "Calling....."
+        }
+    </script>
+</body>
+</html>

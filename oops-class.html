@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+<body>
+    <script>
+        class First{
+            show(){
+                  console.log("This my first oops code...here i am learning about class and objects..")
+            }
+    
+        }
+
+        obj = new First()
+        obj.show()
+
+        // class method with parameter
+
+
+        class Second{
+            get(name, age){
+               document.write(`My name is ${name} and age is ${age} <br>`)
+            }
+
+        }
+
+        obj = new Second()
+        obj.get('Rohit',26)
+
+        // class with constructor
+
+        class Third{
+            constructor(name, age){
+                this.name = name
+                this.age = age
+                
+            }
+
+            show(){
+                document.write(this.name,this.age)
+            }
+        }
+
+        obj = new Third('Rohit',26)
+        obj.show()
+
+
+
+    
+    </script>
+</body>
+</html>

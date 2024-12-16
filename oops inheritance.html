@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+</head>
+<body>
+    <script>
+        //single level inheritance
+        class Father{
+            constructor(iphone, car){
+                this.iphone = iphone
+                this.car = car
+            }
+            show1(){
+            document.write(`I am an father I have a ${this.car} <br>`)
+        }
+        }
+
+        class Son extends Father{
+               show2(){
+                document.write(`I am a Son and My father gifted me an ${this.iphone} <br>`)
+               }
+        }
+
+        obj = new Son('Iphone 16 Pro max', 'BMW car')
+        obj.show1()
+        obj.show2()
+
+
+
+        // multi level inheritance
+
+        class Grandfather{
+            constructor(phone,car,bunglow){
+                this.phone = phone
+                this.car = car
+                this.bunglow = bunglow
+            }
+
+            show1(){
+                document.write(`I am an grand father i don't want anything...<br>`)
+            }
+        }
+
+        class Parent extends Grandfather{
+            show2(){
+                document.write(`my father have ${this.phone} ${this.car} ${this.bunglow} <br>`)
+            }
+        }
+        
+        class Son1 extends Parent{
+            show3(){
+                document.write(`my Grand father have ${this.phone} ${this.car} ${this.bunglow}`)
+            }
+        }
+
+        obj = new Son1('iphone16','mercedesBenz', 'BigHome')
+        obj.show1()
+        obj.show2()
+        obj.show3()
+    </script>
+</body>
+</html>
