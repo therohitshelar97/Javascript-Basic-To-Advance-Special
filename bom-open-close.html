@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Close</title>
+</head>
+<body><button onclick="SideOpen()">Side-Open-New-Window</button>
+    <br><br>
+    <button onclick="Open()">Open-New-Window</button>
+    <br><br>
+    <button onclick="OpenWithText()">Open-New-Window-Text</button>
+    <br><br>
+    <button onclick="GoogleOpen()">GoogleOpen</button>
+    <br><br>
+    <button onclick="Close()">Close</button>
+    <script>
+         function SideOpen(){
+            window.open()
+         }
+
+        function Open(){
+            // window.open()
+            window.open("","","height=300,width=400")
+        }
+
+        function OpenWithText(){
+           var data =  window.open("","","height=300,width=400")
+           data.document.write("<h1>Hello</h1>, <p>svusdu uyscasuc iuscasc ai asc asci iacac c gsyca asydayd</p>")
+        }
+
+        function GoogleOpen(){
+            window.open('https://www.google.com/')
+        }
+
+        function Close(){
+            window.close()
+        }
+    </script>
+</body>
+</html>
