@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTime</title>
+    <style>
+        .round{
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+            background-image: conic-gradient(red 0deg,red 1deg, aqua 1deg,aqua 360deg );
+            position: relative;
+            border:10px solid yellow;
+        }
+    </style>
+</head>
+<body> 
+    
+    <div class="round" id="r">
+
+    </div>
+
+    <script>
+        pos = 6
+        sec = 0
+        function Clock(){
+           
+           var r = document.getElementById('r')
+           r.style.transform = `rotate(${sec}deg)`
+           sec = sec+pos
+        }
+        
+        setInterval(Clock,1000)
+    </script>
+</body>
+</html>

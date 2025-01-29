@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timing Properties</title>
+</head>
+<body>
+    <h1>Time : <span id="time"></span>  </h1>
+    <script>
+      /*
+      1. setTimeout
+      2. setTimeInterval 
+      */
+
+      function Clock(){
+        T = new Date()
+        h = T.getHours()
+        m = T.getMinutes()
+        s = T.getSeconds()
+        ms = T.getMilliseconds()
+        document.getElementById('time').innerHTML = `${h} : ${m} : ${s} : ${ms}`
+      }
+      // Syntax For setInterval Function
+      
+      // window.setInterval(function, time in milliseconds)
+
+      window.setInterval(Clock, 1)
+
+
+
+    </script>
+</body>
+</html>

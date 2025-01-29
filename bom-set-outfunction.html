@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setOutfunction</title>
+</head>
+<body>
+    <script>
+        function Late(){
+            document.write('Hello everyone...Sorry I am 2 minutesLate')
+        }
+        window.setTimeout(Late,20000)
+
+
+        setTimeout(function(){
+            document.write("<h1> Hello I am 1 minutes Late </h1>")
+
+        }, 10000)
+    </script>
+</body>
+</html>

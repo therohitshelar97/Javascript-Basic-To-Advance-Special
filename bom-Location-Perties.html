@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+</head>
+<body>
+    <button onclick="Click()">Click</button>
+    <script>
+        /* 
+          1. href - it will return url
+          2. hostname - it will return you the host name
+          3. pathname - it will return you the path where your website is running
+          4. protocol - it will return you https
+          5. port - it will return you a port
+          6. assign - you can load anothe page into it
+        */
+
+
+        h = window.location.href
+        host = window.location.hostname
+        path = window.location.pathname
+        p = window.location.protocol
+        port = window.location.port
+        document.write("href = ",h,"<br>")
+        document.write("Hotsname = ",host,"<br>")
+        document.write("pathname = ", path, "<br>")
+        document.write("Protocol = ", p ,"<br>")
+        document.write("Port = ",port, "<br>")
+
+
+
+        function Click(){
+            window.location.assign('https://www.youtube.com/')
+        }
+
+
+    </script>
+</body>
