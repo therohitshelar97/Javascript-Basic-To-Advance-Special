@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>analog Clock</title>
+    <style>
+        .sec{
+           width: 400px;
+           height: 400px; 
+           position: relative;
+           background-image: conic-gradient(red 0deg,red 1deg,aqua 1deg, aqua 360deg);
+           border-radius: 50%;
+           z-index:0;
+           
+        }
+
+        .min{
+           width: 300px;
+           height: 300px;
+           position: relative;
+           background-image: conic-gradient(rgb(0,0,0,0.0) 0deg,rgb(0,0,0,0.0) 45deg,blue 45deg, blue 49deg, rgb(0,0,0,0.0) 49deg, rgb(0,0,0,0.0) 360deg);
+           border-radius: 50%;
+           position: absolute;
+           top: 50px;
+           left: 58px;
+           z-index: 1;
+           
+        }
+        .hour{
+           width: 300px;
+           height: 300px;
+           position: relative;
+           background-color: aqua;
+           border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="sec" id="se">
+
+    </div>
+    <div class="min">
+
+    </div>
+    <div class="hour">
+
+    </div>
+
+    <script>
+        pos1 = 6
+        min1 = 0
+        function Sec(){
+            var m = document.getElementsByClassName('sec')[0]
+            m.style.transform = `rotate(${min1}deg)`
+            min1 = min1+pos1
+
+        }
+
+        setInterval(Sec,1000)
+
+
+        pos2 = 6
+        min2 = 0
+        function Min(){
+            var m = document.getElementsByClassName('min')[0]
+            m.style.transform = `rotate(${min2}deg)`
+            min2 = min2+pos2
+
+        }
+
+        setInterval(Min,60000)
+    </script>
+</body>
+</html>
